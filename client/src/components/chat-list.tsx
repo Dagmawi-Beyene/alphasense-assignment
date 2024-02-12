@@ -22,7 +22,7 @@ export function ChatList() {
 	}
 
 	return (
-		<div className="relative mx-auto my-auto max-w-2xl px-4 py-10">
+		<div className="relative mx-auto my-auto max-w-2xl px-14 py-10">
 			{messages.map((message, index) => (
 				<div key={index}>
 					<ChatMessage message={message} />
