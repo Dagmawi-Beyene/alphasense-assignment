@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 const server = http.createServer(app);
-const io = socketIo(server, { cors: { origin: "http://localhost:5173/" } });
+const io = socketIo(server, { cors: { origin: "*" } });
 
 let messageId = 1;
 const channels = [
